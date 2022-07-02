@@ -27,11 +27,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -39,10 +40,10 @@
             android:id="@+id/garis3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="TODO"
             android:src="@drawable/ic_menu_24"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="TODO" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/sapa"
@@ -56,151 +57,160 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/garis3" />
 
-        <TextView
-            android:id="@+id/title_nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/sapa"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="18dp"
-            android:text="Nama Pemesan"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sapa" />
-
-        <EditText
-            android:id="@+id/nama_pemesan"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_below="@+id/title_nama"
-            android:background="@drawable/background1"
-            android:hint="Henry Hendrawan"
-            android:paddingStart="20dp"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/title_nama"
-            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck"
-            tools:layout_editor_absoluteX="20dp" />
-
-        <View
-            android:id="@+id/background_prodak"
-            android:layout_width="match_parent"
-            android:layout_height="145dp"
-            android:layout_below="@+id/nama_pemesan"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/background1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nama_pemesan" />
-
-        <TextView
-            android:id="@+id/title_uang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/background_prodak"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="18dp"
-            android:text="Uang Tunai"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_prodak" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/title_uang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_uang">
+            <TextView
+                android:id="@+id/title_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sapa"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Nama Pemesan"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sapa" />
 
             <EditText
-                android:id="@+id/uang_tunai"
+                android:id="@+id/nama_pemesan"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_below="@+id/title_nama"
                 android:background="@drawable/background1"
-                android:hint="Rp0"
+                android:hint="Henry Hendrawan"
                 android:paddingStart="20dp"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_hitung"
+                app:layout_constraintTop_toBottomOf="@+id/title_nama"
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <View
+                android:id="@+id/background_prodak"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_below="@+id/nama_pemesan"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background1"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/nama_pemesan" />
+
+            <TextView
+                android:id="@+id/title_uang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/background_prodak"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Uang Tunai"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_prodak" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/title_uang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_uang">
+
+                <EditText
+                    android:id="@+id/uang_tunai"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/background1"
+                    android:hint="Rp0"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_hitung"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlSymmetry,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btn_hitung"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:text="Hitung"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/title_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cl1"
+                android:layout_marginTop="20dp"
+                android:text="Total"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl1" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cl1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:text="Rp0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl1" />
+
+            <TextView
+                android:id="@+id/title_kembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_total"
+                android:layout_marginTop="10dp"
+                android:text="Kembalian"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_total" />
+
+            <TextView
+                android:id="@+id/kembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_total"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:text="Rp0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total" />
 
             <Button
-                android:id="@+id/btn_hitung"
-                android:layout_width="120dp"
+                android:id="@+id/btn_pesan"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_below="@id/title_kembalian"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/button"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                android:text="Hitung"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Tambah Pesanan"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/title_total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cl1"
-            android:layout_marginTop="20dp"
-            android:text="Total"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cl1" />
-
-        <TextView
-            android:id="@+id/total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cl1"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:text="Rp0"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cl1" />
-
-        <TextView
-            android:id="@+id/title_kembalian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/title_total"
-            android:layout_marginTop="10dp"
-            android:text="Kembalian"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_total" />
-
-        <TextView
-            android:id="@+id/kembalian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/title_total"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:text="Rp0"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/total" />
-
-        <Button
-            android:id="@+id/btn_pesan"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_below="@id/title_kembalian"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button"
-            android:text="Tambah Pesanan"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_kembalian"
-            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_kembalian"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_bottom_menu"
+        app:menu="@menu/menu_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
