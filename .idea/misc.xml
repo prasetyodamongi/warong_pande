@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/drawable/background1.xml" value="0.240625" />
+        <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/drawable/background_orange.xml" value="0.183" />
         <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/drawable/button.xml" value="0.240625" />
+        <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/layout/activity_add.xml" value="0.192481884057971" />
         <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/layout/activity_form_login.xml" value="0.22" />
         <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Studio Project/WarongPande/app/src/main/res/menu/menu_bottom.xml" value="0.22447916666666667" />
