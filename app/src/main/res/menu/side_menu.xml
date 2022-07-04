@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perusahan"
+            android:title="Perusahan"/>
+        <item
+            android:id="@+id/tmb_prdk"
+            android:title="Tambah Produk"/>
+        <item
+            android:id="@+id/tmb_ktg"
+            android:title="Tambah Kategori"/>
+        <item
+            android:id="@+id/edit_satuan"
+            android:title="Edit Satuan"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Tentang Aplikasi">
+            <menu>
+                <item
+                    android:id="@+id/pengaturan"
+                    android:title="Pengaturan"/>
+                <item
+                    android:id="@+id/tentang"
+                    android:title="Tentang Kami"/>
+                <item
+                    android:id="@+id/hubungi"
+                    android:title="Hubungi Kami"/>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Warong Pande</string>
+    <string name="beranda">Beranda</string>
+    <string name="daftar_pesanan">Daftar Pesanan</string>
+    <string name="riwayat_pesanan">Riwayat Pesanan</string>
+    <string name="akun">Akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <string-array name="produk">
+        <item>Pilih Produk</item>
+        <item>Produk 1</item>
+        <item>Produk 2</item>
+        <item>Produk 3</item>
+        <item>Produk 4</item>
+    </string-array>
 </resources>
