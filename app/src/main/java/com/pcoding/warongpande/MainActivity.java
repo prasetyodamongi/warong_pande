@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //SIDE NAVIGATION BAR
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+        //BOTTOM NAVIGATION BAR
         bottomNavigationView = findViewById(R.id.bar_bottom_menu);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FragmentBeranda()).commit();
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
@@ -64,10 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-
                 return true;
             }
         });
+
+        // TARU CODING ONCREAT BERIKUTNYA DISINI!
 
     }
 }

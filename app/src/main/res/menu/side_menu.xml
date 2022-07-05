@@ -4,15 +4,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/perusahan"
+            android:icon="@drawable/ic_business"
             android:title="Perusahan"/>
         <item
             android:id="@+id/tmb_prdk"
+            android:icon="@drawable/ic_add_produk"
             android:title="Tambah Produk"/>
         <item
             android:id="@+id/tmb_ktg"
+            android:icon="@drawable/ic_add_kategori"
             android:title="Tambah Kategori"/>
         <item
             android:id="@+id/edit_satuan"
+            android:icon="@drawable/ic_edit_satuan"
             android:title="Edit Satuan"/>
     </group>
 
@@ -21,12 +25,15 @@
             <menu>
                 <item
                     android:id="@+id/pengaturan"
+                    android:icon="@drawable/ic_setting"
                     android:title="Pengaturan"/>
                 <item
                     android:id="@+id/tentang"
+                    android:icon="@drawable/ic_about"
                     android:title="Tentang Kami"/>
                 <item
                     android:id="@+id/hubungi"
+                    android:icon="@drawable/ic_hubungi"
                     android:title="Hubungi Kami"/>
             </menu>
         </item>
